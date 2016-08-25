@@ -1,0 +1,21 @@
+sudo: required
+
+language:
+  - cpp
+
+install:
+  - sudo pip install cpp-coveralls
+  - sudo apt-get install libgtest-dev
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+  - ./unit_tests
+
+after_success:
+  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"
+
+notifications:
+  email: false
