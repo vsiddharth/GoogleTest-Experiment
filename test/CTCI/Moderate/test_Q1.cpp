@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
-#include "CTCI/Chapter-17/Q1.h"
+#include "CTCI/Moderate/Q1.h"
 
-TEST(Chapter17, Q1)
+TEST(Moderate, Q1)
 {
 	int n = 171;
 	int m = 19;
