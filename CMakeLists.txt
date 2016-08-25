@@ -18,6 +18,7 @@ include_directories(
 add_library(
     CTCI
     src/CTCI/Chapter-5/Q1.cpp
+    src/CTCI/Chapter-5/Q5.cpp
     src/CTCI/Chapter-17/Q1.cpp
     )
 
@@ -43,6 +44,7 @@ add_executable(
     unit_tests
     test/main.cpp
     test/CTCI/Chapter-5/test_Q1.cpp
+    test/CTCI/Chapter-5/test_Q5.cpp
     test/CTCI/Chapter-17/test_Q1.cpp
     )
 
