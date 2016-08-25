@@ -21,6 +21,7 @@ add_library(
     src/CTCI/Chapter-5/Q5.cpp
     src/CTCI/Chapter-5/Q6.cpp
     src/CTCI/Moderate/Q1.cpp
+    src/CTCI/Hard/Q1.cpp
     )
 
 set(GOOGLETEST_ROOT external/googletest/googletest CACHE STRING "Google Test Root")
@@ -48,6 +49,7 @@ add_executable(
     test/CTCI/Chapter-5/test_Q5.cpp
     test/CTCI/Chapter-5/test_Q6.cpp
     test/CTCI/Moderate/test_Q1.cpp
+    test/CTCI/Hard/test_Q1.cpp
     )
 
 add_dependencies(unit_tests googletest)
